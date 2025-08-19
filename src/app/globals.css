@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter-sans);
   --color-primary-500: #cc0036;
+  --color-primary-600: #282828;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +28,8 @@ body {
   padding: 0 130px;
   color: var(--foreground);
 
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, auto);
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto); */
 }
