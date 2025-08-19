@@ -3,10 +3,10 @@ import { SectionProviders } from "../SectionProviders";
 
 export default function SectionGames() {
   return (
-    <section className="flex flex-col justify-center items-center bg-gradient-to-b from-[#151515] to-[#494949]">
-      <SectionProviders />
+    <section className=" flex flex-col justify-center items-center bg-gradient-to-b from-[#151515] to-[#494949]">
+      {/* <SectionProviders /> */}
       <div className="flex flex-col col-span-full justify-center items-center mb-3 max-w-[980px]">
-        <h1 className="text-[44px] font-light text-center">
+        <h1 className="text-[40px] md:text-[44px] font-light text-center">
           Mais de <strong className="text-primary-500 font-bold">4000</strong>{" "}
           jogos
         </h1>
@@ -21,24 +21,48 @@ export default function SectionGames() {
         </div>
         <Button text="Quero ser um afiliado" />
       </div>
-      <div className="flex flex-wrap gap-6 mt-16">
-        <div className="w-[131px] h-[167px] bg-purple-900 rounded-2xl translate-y-[30px]">
-          <img src="/img/fortune-rabbit.svg" alt="" className="rounded-2xl" />
+      <div className="flex flex-wrap gap-4 mt-16">
+        <div className="w-[131px] h-[167px] bg-purple-900 rounded-2xl translate-y-[30px] cursor-pointer">
+          <img
+            src="/img/desktop/fortune-rabbit.svg"
+            alt=""
+            className="rounded-2xl"
+          />
         </div>
-        <div className="w-[210px] h-[267px] bg-pink-900 rounded-2xl">
-          <img src="/img/fortune-dragon.svg" alt="" className="rounded-2xl" />
+        <div className="w-[210px] h-[267px] bg-pink-900 rounded-2xl cursor-pointer">
+          <img
+            src="/img/desktop/fortune-dragon.svg"
+            alt=""
+            className="rounded-2xl"
+          />
         </div>
-        <div className="w-[159px] h-[202px] bg-yellow-300 rounded-2xl -translate-y-[32px]">
-          <img src="/img/fortune-snake.svg" alt="" className="rounded-2xl" />
+        <div className="w-[159px] h-[202px] bg-yellow-300 rounded-2xl -translate-y-[32px] cursor-pointer">
+          <img
+            src="/img/desktop/fortune-snake.svg"
+            alt=""
+            className="rounded-2xl"
+          />
         </div>
-        <div className="w-[210px] h-[267px] bg-blue-700 rounded-2xl">
-          <img src="/img/luck-rabbit.svg" alt="" className="rounded-2xl" />
+        <div className="w-[210px] h-[267px] bg-blue-700 rounded-2xl  cursor-pointer">
+          <img
+            src="/img/desktop/luck-rabbit.svg"
+            alt=""
+            className="rounded-2xl"
+          />
         </div>
-        <div className="w-[210px] h-[266px] bg-green-900 rounded-2xl -translate-y-[32px]">
-          <img src="/img/fortune-tiger.svg" alt="" className="rounded-2xl" />
+        <div className="w-[210px] h-[266px] bg-green-900 rounded-2xl -translate-y-[32px] cursor-pointer">
+          <img
+            src="/img/desktop/fortune-tiger.svg"
+            alt=""
+            className="rounded-2xl"
+          />
         </div>
-        <div className="w-[138px] h-[176px] bg-red-900 rounded-2xl translate-y-[23px]">
-          <img src="/img/cash-mania.svg" alt="" className="rounded-2xl" />
+        <div className="w-[138px] h-[176px] bg-red-900 rounded-2xl translate-y-[23px] cursor-pointer">
+          <img
+            src="/img/desktop/cash-mania.svg"
+            alt=""
+            className="rounded-2xl"
+          />
         </div>
       </div>
     </section>

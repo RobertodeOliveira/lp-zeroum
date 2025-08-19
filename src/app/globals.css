@@ -30,6 +30,8 @@ body {
 
   display: flex;
   flex-direction: column;
-  /* grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, auto); */
+
+  @media (max-width: 647px) {
+    padding: 0 24px;
+  }
 }

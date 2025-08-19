@@ -31,7 +31,7 @@ const socialMediaList: SocialMedia = [
 
 export default function Header() {
   return (
-    <header className="header">
+    <header className="flex justify-between pt-5 border-t-[5px] border-t-primary-500">
       <div>
         <img src="/icons/logo.svg" alt="" />
       </div>
