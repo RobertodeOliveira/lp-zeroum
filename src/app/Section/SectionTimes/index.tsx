@@ -84,7 +84,7 @@ export default function SectionTimes() {
   return (
     <section className="row-span-6 pt-16 flex justify-center flex-col items-center px-4 bg-gradient-to-b from-[#494949] to-[#151515]">
       <div className="flex justify-center text-3xl mb-10">
-        <h3>
+        <h3 className="text-center">
           O maior apoiador do <strong className="">Futebol Brasileiro</strong>
         </h3>
       </div>
@@ -95,7 +95,7 @@ export default function SectionTimes() {
             className="flex items-center justify-center bg-[#282828] w-[67px] h-[67px] p-3 rounded-2xl"
           >
             <img
-              className="rounded-lg"
+              className="rounded-lg h-10"
               src={card.image}
               alt={`Time ${card.id}`}
             />
@@ -103,13 +103,15 @@ export default function SectionTimes() {
         ))}
       </div>
       <div className="mt-16">
-        <h3 className="text-[44px] text-center font-light">Como Funciona?</h3>
+        <h3 className="text-[32px] md:text-[44px] text-center font-light">
+          Como Funciona?
+        </h3>
         <div className="flex flex-wrap gap-6 justify-center mt-10">
           {cardList.map((card, index) => {
             return (
               <Card
                 key={index}
-                className="w-[471px] scale-75 md:scale-100 rounded-2xl"
+                className="w-max-[378px]  md:w-[471px] scale-75 md:scale-100 rounded-2xl p-4"
               >
                 <div className="bg-white text-primary-500 font-bold text-[42px] rounded-2xl h-[60px] w-[60px] flex items-center justify-center">
                   {card.number}
